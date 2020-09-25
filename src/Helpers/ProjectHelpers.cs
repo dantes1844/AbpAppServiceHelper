@@ -18,7 +18,7 @@ namespace AbpAppServiceHelper.Helpers
 {
     public static class ProjectHelpers
     {
-        static DTE2 _dte = AddAnyFilePackage._dte;
+        static DTE2 _dte = AbpAppServiceHelperPackage._dte;
 
         public static string GetRootNamespace(this Project project)
         {
@@ -227,7 +227,7 @@ namespace AbpAppServiceHelper.Helpers
 
         public static IComponentModel GetComponentModel()
         {
-            return (IComponentModel)AddAnyFilePackage.GetGlobalService(typeof(SComponentModel));
+            return (IComponentModel)AbpAppServiceHelperPackage.GetGlobalService(typeof(SComponentModel));
         }
 
         public static object GetSelectedItem()

@@ -202,7 +202,7 @@
     <Compile Include="FileNameDialog.xaml.cs">
       <DependentUpon>FileNameDialog.xaml</DependentUpon>
     </Compile>
-    <Compile Include="AddAnyFilePackage.cs" />
+    <Compile Include="AbpAppServiceHelperPackage.cs" />
     <Compile Include="Helpers\Logger.cs" />
     <Compile Include="Helpers\ProjectHelpers.cs" />
     <Compile Include="Helpers\VsTheme.cs" />

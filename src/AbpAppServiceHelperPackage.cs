@@ -22,7 +22,7 @@ namespace AbpAppServiceHelper
     [InstalledProductRegistration("#110", "#112", Vsix.Version, IconResourceID = 400)]
     [ProvideMenuResource("Menus.ctmenu", 1)]
     [Guid(PackageGuids.guidAddAnyFilePkgString)]
-    public sealed class AddAnyFilePackage : AsyncPackage
+    public sealed class AbpAppServiceHelperPackage : AsyncPackage
     {
         public static DTE2 _dte;
 
@@ -164,7 +164,7 @@ namespace AbpAppServiceHelper
 
                         view?.Caret.MoveTo(new SnapshotPoint(view.TextBuffer.CurrentSnapshot, position));
                     }
-
+                    
                     _dte.ExecuteCommand("SolutionExplorer.SyncWithActiveDocument");
                     _dte.ActiveDocument.Activate();
                 }
