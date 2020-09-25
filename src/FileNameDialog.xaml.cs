@@ -9,21 +9,16 @@ namespace AbpAppServiceHelper
 {
     public partial class FileNameDialog : Window
     {
-        private const string DEFAULT_TEXT = "Enter a file name";
+        private const string DEFAULT_TEXT = "输入实体类名称，单数形式";
         private static List<string> _tips = new List<string> {
-            "Tip: 'folder/file.ext' also creates a new folder for the file",
-            "Tip: You can create files starting with a dot, like '.gitignore'",
-            "Tip: You can create files without file extensions, like 'LICENSE'",
-            "Tip: Create folder by ending the name with a forward slash",
-            "Tip: Use glob style syntax to add related files, like 'widget.(html,js)'",
-            "Tip: Separate names with commas to add multiple files and folders"
+            "自动生成复数的实体文件夹，内含Dto文件夹及几个基础的Dto类。另外还包含接口和业务类"
         };
 
         public FileNameDialog(string folder)
         {
             InitializeComponent();
 
-            lblFolder.Content = string.Format("{0}/", folder);
+            lblFolder.Content = $"{folder}/";
 
             Loaded += (s, e) =>
             {

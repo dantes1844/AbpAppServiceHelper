@@ -83,7 +83,8 @@ namespace AbpAppServiceHelper
                 var inputCamel = inputLower.Substring(0, 1).ToUpper() + inputLower.Substring(1);
 
                 //添加父级文件夹
-                var appFolder = Path.Combine(folder, inputCamel);
+                var rootFolderName = $"{inputCamel}s";
+                var appFolder = Path.Combine(folder, rootFolderName);
                 if (!Directory.Exists(appFolder))
                 {
                     Directory.CreateDirectory(appFolder);
@@ -94,7 +95,7 @@ namespace AbpAppServiceHelper
                 foreach (ProjectItem childProject in project.ProjectItems)
                 {
 
-                    if (childProject.Name == inputCamel)
+                    if (childProject.Name == rootFolderName)
                     {
                         //添加dto文件夹
                         var dtoFolder = Path.Combine(appFolder, "Dto");
@@ -164,7 +165,7 @@ namespace AbpAppServiceHelper
 
                         view?.Caret.MoveTo(new SnapshotPoint(view.TextBuffer.CurrentSnapshot, position));
                     }
-                    
+
                     _dte.ExecuteCommand("SolutionExplorer.SyncWithActiveDocument");
                     _dte.ActiveDocument.Activate();
                 }
