@@ -85,11 +85,7 @@ namespace AbpAppServiceHelper
                 //添加父级文件夹
                 var rootFolderName = $"{inputCamel}s";
                 var appFolder = Path.Combine(folder, rootFolderName);
-                if (!Directory.Exists(appFolder))
-                {
-                    Directory.CreateDirectory(appFolder);
-                    project.AddDirectoryToProject(new DirectoryInfo(appFolder));
-                }
+                project.ProjectItems.AddFolder(appFolder);
 
 
                 foreach (ProjectItem childProject in project.ProjectItems)
@@ -99,11 +95,7 @@ namespace AbpAppServiceHelper
                     {
                         //添加dto文件夹
                         var dtoFolder = Path.Combine(appFolder, "Dto");
-                        if (!Directory.Exists(dtoFolder))
-                        {
-                            Directory.CreateDirectory(dtoFolder);
-                            childProject.ProjectItems.AddFromDirectory(dtoFolder);
-                        }
+                        childProject.ProjectItems.AddFolder(dtoFolder);
 
                         //添加几个dto类及映射类
                         await CreateDtoFile(inputCamel, dtoFolder, selectedItem, childProject, project, TemplateType.DefaultDto);

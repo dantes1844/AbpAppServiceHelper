@@ -2,7 +2,7 @@
 
 namespace {namespace}
 {
-    public class {classname} : IEntityDto<int>
+    public class {classname} : EntityDto<int>
     {
         $
     }

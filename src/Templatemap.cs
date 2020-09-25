@@ -85,18 +85,18 @@ namespace MadsKristensen.AddAnyFile
                 {
                     content = content.Replace("{entity}", inputCamel)
                         .Replace("{pageddto}", $"Paged{inputCamel}ResultRequestDto")
-                        .Replace("{defaultdto}", $"Create{inputCamel}Dto")
+                        .Replace("{defaultdto}", $"{inputCamel}Dto")
                         .Replace("{createdto}", $"Create{inputCamel}Dto")
-                        .Replace("{updatedto}", $"Create{inputCamel}Dto")
+                        .Replace("{updatedto}", $"Update{inputCamel}Dto")
                         .Replace("{interface}", $"I{inputCamel}AppService")
                         ;
                 }
                 else if (templateType == TemplateType.MapProfile)
                 {
                     content = content.Replace("{entity}", inputCamel)
-                            .Replace("{defaultdto}", $"Create{inputCamel}Dto")
+                            .Replace("{defaultdto}", $"{inputCamel}Dto")
                             .Replace("{createdto}", $"Create{inputCamel}Dto")
-                            .Replace("{updatedto}", $"Create{inputCamel}Dto")
+                            .Replace("{updatedto}", $"Update{inputCamel}Dto")
                         ;
                 }
 

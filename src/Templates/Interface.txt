@@ -2,6 +2,7 @@
 using Abp.Application.Services;
 using Abp.Application.Services.Dto;
 using {namespace};
+using {namespace}.Dto;
 
 namespace {namespace}
 {

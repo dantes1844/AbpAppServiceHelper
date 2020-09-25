@@ -8,6 +8,7 @@ using Abp.Authorization;
 using Abp.Domain.Repositories;
 using Microsoft.EntityFrameworkCore;
 using {namespace};
+using {namespace}.Dto;
 
 namespace {namespace}
 {
@@ -17,12 +18,12 @@ namespace {namespace}
         AsyncCrudAppService<{entity}, {defaultdto}, int, {pageddto}, {createdto}, {updatedto}>,
         {interface}
     {
-        private readonly IRepository<Area> _repository;
+        private readonly IRepository<{entity}> _repository;
 
-        public {classname}(IRepository<{entity}, int> repository)
+        public {classname}(IRepository<{entity}> repository)
             : base(repository)
         {
-            _repository = areaRepository;
+            _repository = repository;
         }
     }
 }
