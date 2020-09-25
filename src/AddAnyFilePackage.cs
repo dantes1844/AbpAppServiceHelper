@@ -9,12 +9,14 @@ using System.Text.RegularExpressions;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Interop;
+using AbpAppServiceHelper.Helpers;
 using EnvDTE;
 using EnvDTE80;
+using MadsKristensen.AddAnyFile;
 using Microsoft.VisualStudio.Shell;
 using Microsoft.VisualStudio.Text;
 
-namespace MadsKristensen.AddAnyFile
+namespace AbpAppServiceHelper
 {
     [PackageRegistration(UseManagedResourcesOnly = true, AllowsBackgroundLoading = true)]
     [InstalledProductRegistration("#110", "#112", Vsix.Version, IconResourceID = 400)]

@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using System.Windows;
 using System.Windows.Input;
 using System.Windows.Media.Imaging;
+using MadsKristensen.AddAnyFile;
 
-namespace MadsKristensen.AddAnyFile
+namespace AbpAppServiceHelper
 {
     public partial class FileNameDialog : Window
     {
@@ -26,7 +27,7 @@ namespace MadsKristensen.AddAnyFile
 
             Loaded += (s, e) =>
             {
-                Icon = BitmapFrame.Create(new Uri("pack://application:,,,/AddAnyFile;component/Resources/icon.png", UriKind.RelativeOrAbsolute));
+                Icon = BitmapFrame.Create(new Uri("pack://application:,,,/AbpAppServiceHelper;component/Resources/icon.png", UriKind.RelativeOrAbsolute));
                 Title = Vsix.Name;
                 SetRandomTip();
 

@@ -2,11 +2,10 @@
 using System.Collections.Generic;
 using System.Windows;
 using System.Windows.Controls;
-
 using Microsoft.VisualStudio.PlatformUI;
 using Microsoft.VisualStudio.Shell;
 
-namespace MadsKristensen.AddAnyFile
+namespace AbpAppServiceHelper.Helpers
 {
     public static class VsTheme
     {
