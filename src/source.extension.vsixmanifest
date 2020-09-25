@@ -11,7 +11,7 @@
         <Tags>file, add, template</Tags>
     </Metadata>
     <Installation InstalledByMsi="false" AllUsers="true">
-        <InstallationTarget Version="[16.0,17.0)" Id="Microsoft.VisualStudio.Enterprise" />
+        <InstallationTarget Version="[16.0,17.0)" Id="Microsoft.VisualStudio.Pro" />
     </Installation>
     <Prerequisites>
         <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[15.0,)" DisplayName="Visual Studio core editor" />
