@@ -10,7 +10,7 @@
                 <Parent guid="guidSHLMainMenu" id="IDG_VS_CTXT_PROJECT_ADD_ITEMS"/>
                 <CommandFlag>DynamicVisibility</CommandFlag>
                 <Strings>
-                    <ButtonText>New Empty File...</ButtonText>
+                    <ButtonText>Abp业务类及实体</ButtonText>
                 </Strings>
             </Button>
         </Buttons>

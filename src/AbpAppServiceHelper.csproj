@@ -194,10 +194,10 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AddAnyFile.cs">
+    <Compile Include="AbpAppServiceHelper.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>AddAnyFile.vsct</DependentUpon>
+      <DependentUpon>AbpAppServiceHelper.vsct</DependentUpon>
     </Compile>
     <Compile Include="FileNameDialog.xaml.cs">
       <DependentUpon>FileNameDialog.xaml</DependentUpon>
@@ -253,11 +253,11 @@
     </Resource>
   </ItemGroup>
   <ItemGroup>
-    <VSCTCompile Include="AddAnyFile.vsct">
+    <VSCTCompile Include="AbpAppServiceHelper.vsct">
       <ResourceName>Menus.ctmenu</ResourceName>
       <SubType>Designer</SubType>
       <Generator>VsctGenerator</Generator>
-      <LastGenOutput>AddAnyFile.cs</LastGenOutput>
+      <LastGenOutput>AbpAppServiceHelper.cs</LastGenOutput>
     </VSCTCompile>
   </ItemGroup>
   <ItemGroup>
