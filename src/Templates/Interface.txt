@@ -5,7 +5,7 @@ using {namespace};
 
 namespace {namespace}
 {
-    public interface IAreaAppService : IAsyncCrudAppService<AreaDto,  int, PagedAreaResultRequestDto, CreateAreaDto, UpdateAreaDto>
+    public interface {interface} : IAsyncCrudAppService<{defaultdto},  int, {pageddto}, {createdto}, {updatedto}>
     {
         // 在这里增加自定义的方法，默认的CRUD在IAsyncCrudAppService里都已经实现了，可以直接使用。或者根据需求override
         $

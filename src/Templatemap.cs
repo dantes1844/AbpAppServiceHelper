@@ -81,7 +81,7 @@ namespace MadsKristensen.AddAnyFile
                 content = content.Replace("{namespace}", ns)
                               .Replace("{classname}", name);
 
-                if (templateType == TemplateType.Class)
+                if (templateType == TemplateType.Class || templateType == TemplateType.Interface)
                 {
                     content = content.Replace("{entity}", inputCamel)
                         .Replace("{pageddto}", $"Paged{inputCamel}ResultRequestDto")
