@@ -1,0 +1,28 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using Abp.Application.Services;
+using Abp.Application.Services.Dto;
+using Abp.Authorization;
+using Abp.Domain.Repositories;
+using Microsoft.EntityFrameworkCore;
+using {namespace};
+
+namespace {namespace}
+{
+    //todo  在这里修改成你要设置的权限名称
+    //[AbpAuthorize("PermissionName")]
+    public class {classname} :
+        AsyncCrudAppService<{entity}, {defaultdto}, int, {pageddto}, {createdto}, {updatedto}>,
+        {interface}
+    {
+        private readonly IRepository<Area> _repository;
+
+        public {classname}(IRepository<{entity}, int> repository)
+            : base(repository)
+        {
+            _repository = areaRepository;
+        }
+    }
+}

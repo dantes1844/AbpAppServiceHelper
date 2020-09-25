@@ -1,0 +1,16 @@
+﻿using AutoMapper;
+
+namespace {namespace}
+{
+    public class {classname} : Profile
+    {
+        public {classname}()
+        {
+            CreateMap<{createdto}, {entity}>();
+            CreateMap<{updatedto}, {entity}>();
+            CreateMap<{entity}, {defaultdto}>();
+           //在这里增加实体映射的配置
+           $
+        }
+    }
+}
